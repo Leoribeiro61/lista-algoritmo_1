@@ -24,7 +24,7 @@ int main (){
     media = (nota1*3.5 + nota2*7.5)/11;
 	printf ("a media das notas sao %f \n", media  );
 	
-	 
+	  
 	
 }
 //outra forma de fazer 

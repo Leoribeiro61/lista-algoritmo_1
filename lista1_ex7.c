@@ -1,6 +1,6 @@
 #include <stdio.h> 
 
-
+ 
 
 int main (){
 	float horas , valorHora , salario; 
