@@ -1,1 +1,1 @@
-# lista-algoritmo_1
+# lista-algoritmos
