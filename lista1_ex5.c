@@ -13,6 +13,4 @@ int main(){
     printf("Quantidade necessaria de rolos: %d rolos \n", quantidadeRolos);
 
     printf("Quantidade de metros avulsos: %d", quantidadeMetros);
-
-
 }
