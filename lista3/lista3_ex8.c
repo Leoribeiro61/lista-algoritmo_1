@@ -20,19 +20,19 @@ int main(){
         valorFinal =valorProduto + (valorProduto*0.07);
         printf("O valor do produto e: R$%.2f", valorFinal);
     }
-    else if (estado == "SP" || "sp"){
+        else if (estado == "SP" || "sp"){
         valorFinal =valorProduto + (valorProduto*0.12);
         printf("O valor do produto e: R$%.2f", valorFinal);
     }
-    else if  (estado == "RJ" || "rj"){
-        valorFinal =valorProduto + (valorProduto*0.15);
-        printf("O valor do produto e: R$%.2f", valorFinal);
+            else if  (estado == "RJ" || "rj"){
+            valorFinal =valorProduto + (valorProduto*0.15);
+            printf("O valor do produto e: R$%.2f", valorFinal);
     }
-    else if  (estado == "MS" || "ms"){
-        valorFinal =valorProduto + (valorProduto*0.08);
-        printf("O valor do produto e: R$%.2f", valorFinal);
+                else if  (estado == "MS" || "ms"){
+                valorFinal =valorProduto + (valorProduto*0.08);
+                printf("O valor do produto e: R$%.2f", valorFinal);
     }
-    else{ 
-        printf("Estado nao encotrado!");
+                    else{ 
+                    printf("Estado nao encotrado!");
     }
 }
