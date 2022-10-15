@@ -9,7 +9,7 @@ MG = 7% , SP = 12% , RJ = 15% , MS = 8%.*/
 #include <string.h>
 int main(){
     float valorProduto, valorFinal;
-    char estado [2], MG, SP, RJ, MS ; 
+    char estado [3], MG, SP, RJ, MS ; 
 
     printf("Digite o valor do produto: \n");
     scanf("%f", &valorProduto);
@@ -19,20 +19,20 @@ int main(){
     if (estado == "MG" || "mg"){
         valorFinal =valorProduto + (valorProduto*0.07);
         printf("O valor do produto e: R$%.2f", valorFinal);
-    }
+        }
         else if (estado == "SP" || "sp"){
         valorFinal =valorProduto + (valorProduto*0.12);
         printf("O valor do produto e: R$%.2f", valorFinal);
-    }
+        }
             else if  (estado == "RJ" || "rj"){
             valorFinal =valorProduto + (valorProduto*0.15);
             printf("O valor do produto e: R$%.2f", valorFinal);
-    }
+            }       
                 else if  (estado == "MS" || "ms"){
                 valorFinal =valorProduto + (valorProduto*0.08);
                 printf("O valor do produto e: R$%.2f", valorFinal);
-    }
+                }
                     else{ 
                     printf("Estado nao encotrado!");
-    }
+                    }
 }
