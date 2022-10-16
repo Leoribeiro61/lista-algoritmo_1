@@ -7,6 +7,7 @@ MG = 7% , SP = 12% , RJ = 15% , MS = 8%.*/
 
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 int main(){
     float valorProduto, valorFinal;
     char estado [3], MG, SP, RJ, MS ; 
@@ -14,21 +15,24 @@ int main(){
     printf("Digite o valor do produto: \n");
     scanf("%f", &valorProduto);
     printf("Digite o seu Estado: \n"); 
-    scanf("%s", &estado);
-
-    if (estado == "MG" || "mg"){
+    scanf("%s", estado);
+    printf("estado %d", strcmp(estado, "sp"));
+	estado[0]= tolower(estado[0]);
+	estado[1]= tolower(estado[1]);
+	
+    if (strcmp(estado, "mg")==0){
         valorFinal =valorProduto + (valorProduto*0.07);
         printf("O valor do produto e: R$%.2f", valorFinal);
         }
-        else if (estado == "SP" || "sp"){
+        else if (strcmp(estado, "sp")==0){
         valorFinal =valorProduto + (valorProduto*0.12);
         printf("O valor do produto e: R$%.2f", valorFinal);
         }
-            else if  (estado == "RJ" || "rj"){
+            else if  (strcmp(estado, "rj")==0){
             valorFinal =valorProduto + (valorProduto*0.15);
             printf("O valor do produto e: R$%.2f", valorFinal);
             }       
-                else if  (estado == "MS" || "ms"){
+                else if  (strcmp(estado, "ms")==0){
                 valorFinal =valorProduto + (valorProduto*0.08);
                 printf("O valor do produto e: R$%.2f", valorFinal);
                 }
