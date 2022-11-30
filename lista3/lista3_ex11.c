@@ -1,35 +1,32 @@
-#include <stdio.h> 
+#include <stdio.h>
 
-int main (){
-    int  op ; 
-    float numero1 , numero2 , numero3 , media; 
-
-    printf("Digite tres numeros inteiros: \n"); 
-    scanf("%f %f %f", &numero1, &numero2, &numero3); 
-
-    printf("Operacoes\n");
-    printf("1 - Geometrica \n");
-    printf("2 - Ponderada \n");
-    printf("3 - Harmonica \n");
-    printf("4 - Aritmetica \n");
-    printf("Digite a op deseja fazer: \n");
-    scanf("%d", &op); 
-
-    if (op == 1){
-        media = numero1 * numero2 * numero3;
-        printf("Resultado: %.2f", media);
-    } 
-        else if (op == 2){
-            media = (numero1 + 2 * numero2 + 3 * numero3)/6;
-            printf("Resultado: %.2f", media);
+int main(){
+    
+    float valorX, valorY; 
+    
+    printf("Digite o valor de X: \n");
+    scanf("%f", &valorX);
+    printf("Digite o valor de Y: \n");
+    scanf("%.1f", &valorY);
+    
+    if (valorX > 0 && valorY > 0){
+        printf("Quadrante 1 \n");
+        return 0;
         }
-            else if (op == 3){
-                media = 1 / (1/numero1 + 1/numero2 + 1/numero3);
-                printf("Resultado: %.2f", media);
+        else if (valorX < 0 && valorY > 0){
+            printf("Quadrante 2 \n");
+            return 0;
             }
-                else if (op == 4){
-                    media = (numero1 + numero2 + numero3)/3;
-                    printf("Resultado: %.2f", media);
+            else if (valorX < 0 && valorY < 0){
+                printf("Quadrante 3 \n");
+                return 0;
                 }
-                    else printf("Valor invalido!");
+                else if (valorX > 0 && valorY < 0){
+                    printf("Quadrante 4 \n");
+                    return 0;
+                    }
+                    else{
+                        printf("Origem!");
+                        return 0; 
+                        }
 }

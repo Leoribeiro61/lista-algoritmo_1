@@ -1,22 +1,38 @@
 #include <stdio.h>
 
 int main(){
-    int ddd;
+    float num1, num2, resultado;
+    char operador;
 
-    printf("Digite o DDD: \n");
-    scanf("%d", &ddd);
+    printf("OPERACOES \n");
+    printf("+ Soma \n");
+    printf("- Subtracao \n");
+    printf("* Multiplicacao \n");
+    printf("/ Divisao\n");
 
-    switch (ddd)
+    printf("Digite o operador: \n");
+    scanf("%c", &operador);     
+    printf("Digite dois numeros: \n");
+    scanf("%f%f", &num1, &num2);
+
+    switch (operador)
     {
-        case 61: printf("Brasilia");break;
-        case 71: printf("Salvador");break;
-        case 11: printf("Sao Paulo");break;
-        case 21: printf("Rio de Janeiro");break;
-        case 32: printf("Juiz de Fora");break;
-        case 19: printf("Campinas");break;
-        case 27: printf("Vitoria");break;
-        case 31: printf("Belo Horizonte");break;
-        default: printf("uma cidade no Brasil sem identificacao!");
+        case '+':
+            resultado = num1 + num2;
+            printf("Soma: %.1f", resultado); 
+            break;
+        case '-':
+            resultado = num1 - num2;
+            printf("Subtracao: %.1f", resultado);
+            break;
+        case '*':
+            resultado = num1 * num2;
+            printf("Multiplicacao: %.1f", resultado); 
+            break;
+        case '/':
+            resultado = num1 / num2;
+            printf("Divisao: %.1f", resultado);
+            break; 
+        default: printf("Operador invalido!");
     }
 }
-

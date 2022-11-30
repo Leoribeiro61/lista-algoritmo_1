@@ -1,21 +1,22 @@
 #include <stdio.h>
 
 int main(){
-    int numero;
+    int ddd;
 
-    printf("Digite um numero de 1 a 7: \n");
-    scanf("%d", &numero); 
+    printf("Digite o DDD: \n");
+    scanf("%d", &ddd);
 
-    switch (numero)
+    switch (ddd)
     {
-        case 1: printf("Domingo");break;
-        case 2: printf("Segunda");break;
-        case 3: printf("Terca");break;
-        case 4: printf("Quarta");break;
-        case 5: printf("Quinta");break;
-        case 6: printf("Sexta");break;
-        case 7: printf("Sabado");break;
-        default: printf("Valor invalido!");
+        case 61: printf("Brasilia");break;
+        case 71: printf("Salvador");break;
+        case 11: printf("Sao Paulo");break;
+        case 21: printf("Rio de Janeiro");break;
+        case 32: printf("Juiz de Fora");break;
+        case 19: printf("Campinas");break;
+        case 27: printf("Vitoria");break;
+        case 31: printf("Belo Horizonte");break;
+        default: printf("uma cidade no Brasil sem identificacao!");
     }
-
 }
+
