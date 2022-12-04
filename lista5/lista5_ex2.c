@@ -9,6 +9,5 @@ int main(){
 
     if ((strcmp (cor,"branco") == 0) || (strcmp(cor,"verde") == 0) || (strcmp(cor,"amarelo") == 0))
         printf("Cor valida!");
-        else
-            printf("cor invalida");
+        else printf("cor invalida");
 }
